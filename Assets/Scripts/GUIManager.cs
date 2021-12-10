@@ -4,27 +4,27 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GUIManager : MonoBehaviour
-{   public void newgame()
+{   public void NewGame()
     {
         SceneManager.LoadScene("Level1");
     }
-    public void menulevel()
+    public void MenuLevel()
     {
         SceneManager.LoadScene("MenuLevel");
     }
-    public void level1()
+    public void Level1()
     {
         SceneManager.LoadScene("Level1");
     }
-    public void level2()
+    public void Level2()
     {
         SceneManager.LoadScene("Level2");
     }
-    public void credits()
+    public void Credits()
     {
         SceneManager.LoadScene("Credits");
     }
-    public void menu()
+    public void Menu()
     {
         SceneManager.LoadScene("Menu");
     }
