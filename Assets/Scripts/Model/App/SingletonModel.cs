@@ -5,7 +5,7 @@ namespace Model.App
         private static readonly object Obj = new object();
 
         private static SingletonModel _instance;
-        public static PlayerModel Player;
+        private PlayerModel _player;
 
         private SingletonModel()
         {
@@ -24,6 +24,16 @@ namespace Model.App
 
                 return _instance;
             }
+        }
+
+        public void SetPlayer(PlayerModel data)
+        {
+            _instance._player = data;
+        }
+
+        public PlayerModel GetPlayer()
+        {
+            return _instance._player;
         }
     }
 }
