@@ -24,6 +24,10 @@ public class GUIManager : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
+    public void menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
     // Start is called before the first frame update
     void Start()
     {
