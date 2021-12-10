@@ -51,10 +51,14 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CtrlScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScript.cs" />
      <Compile Include="Assets\Scripts\GUIManager.cs" />
      <Compile Include="Assets\Scripts\KontrolScript.cs" />
+     <Compile Include="Assets\Scripts\Model\App\SingletonModel.cs" />
+     <Compile Include="Assets\Scripts\Model\PlayerModel.cs" />
      <Compile Include="Assets\Scripts\ObjectMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
+     <Compile Include="Assets\Scripts\Tool\JSONUtils.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/home/atriv7/UnityProjects/Ningsih The Adventure/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
