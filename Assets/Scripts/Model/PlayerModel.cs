@@ -1,13 +1,12 @@
-using System;
 using Tool;
 
 namespace Model
 {
     public class PlayerModel
     {
-        private int _score;
-        private int _level;
         private double _hp;
+        private int _level;
+        private int _score;
 
         public PlayerModel(int score, int level, double hp)
         {
@@ -16,12 +15,12 @@ namespace Model
             _hp = hp;
         }
 
-        public static PlayerModel FromJson(String json)
+        public static PlayerModel FromJson(string json)
         {
-           return JSONUtils.FromJson<PlayerModel>(json);
+            return JSONUtils.FromJson<PlayerModel>(json);
         }
 
-        public static String ToJson(PlayerModel model)
+        public static string ToJson(PlayerModel model)
         {
             return JSONUtils.ToJson(model);
         }

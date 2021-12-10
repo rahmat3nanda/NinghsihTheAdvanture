@@ -1,17 +1,15 @@
-using System;
 using UnityEngine;
-using Object = System.Object;
 
 namespace Tool
 {
     public class JSONUtils
     {
-        public static String ToJson<T>(T model)
+        public static string ToJson<T>(T model)
         {
             return JsonUtility.ToJson(model);
         }
 
-        public static T FromJson<T>(String json)
+        public static T FromJson<T>(string json)
         {
             return JsonUtility.FromJson<T>(json);
         }
