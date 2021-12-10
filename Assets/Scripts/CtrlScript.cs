@@ -1,27 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CtrlScript : MonoBehaviour
 {
     public GameObject player;
-    // Start is called before the first frame update
-   public void maju()
+
+    private void Start()
     {
-        player.GetComponent<ObjectMovement>().jalan_kanan();
-    }
-   public void mundur()
-    {
-        player.GetComponent<ObjectMovement>().jalan_kiri();
-    }
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+    }
+
+    // Start is called before the first frame update
+    public void Maju()
+    {
+        player.GetComponent<ObjectMovement>().jalan_kanan();
+    }
+
+    public void Mundur()
+    {
+        player.GetComponent<ObjectMovement>().jalan_kiri();
     }
 }

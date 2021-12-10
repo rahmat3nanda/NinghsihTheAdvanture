@@ -1,17 +1,29 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class KontrolScript : MonoBehaviour
 {
     public GameObject player;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
     }
-  
-    void OnMouseDown()
+
+    // Update is called once per frame
+    private void Update()
+    {
+    }
+
+    private void OnMouseDown()
+    {
+        if (gameObject.name == "kiri")
+            player.GetComponent<ObjectMovement>().jalan_kiri();
+        else if (gameObject.name == "kanan")
+            player.GetComponent<ObjectMovement>().jalan_kanan();
+        else if (gameObject.name == "jump") player.GetComponent<ObjectMovement>().melompat();
+    }
+
+    private void OnMouseDrag()
     {
         if (gameObject.name == "kiri")
         {
@@ -23,49 +35,19 @@ public class KontrolScript : MonoBehaviour
         }
         else if (gameObject.name == "jump")
         {
-            player.GetComponent<ObjectMovement>(). melompat();
-           
         }
-
-
     }
 
-    void OnMouseUp()
+    private void OnMouseUp()
     {
         if (gameObject.name == "kiri")
         {
-            
         }
         else if (gameObject.name == "kanan")
         {
-            
-        }
-        else if (gameObject.name == "jump")
-        {
-            
-        }
-
-
-    }
-
-    void OnMouseDrag()
-    {
-        if (gameObject.name == "kiri")
-        {
-            player.GetComponent<ObjectMovement>(). jalan_kiri();
-        }
-        else if (gameObject.name == "kanan")
-        {
-            player.GetComponent<ObjectMovement>(). jalan_kanan();
         }
         else if (gameObject.name == "jump")
         {
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class player : MonoBehaviour
+public class EnemyScript : MonoBehaviour
 {
     // Start is called before the first frame update
     private void Start()
