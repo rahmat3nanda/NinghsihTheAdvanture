@@ -50,11 +50,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CtrlScript.cs" />
      <Compile Include="Assets\Scripts\GUIManager.cs" />
+     <Compile Include="Assets\Scripts\KontrolScript.cs" />
      <Compile Include="Assets\Scripts\ObjectMovement.cs" />
-     <Compile Include="Assets\Scripts\ctrl.cs" />
-     <Compile Include="Assets\Scripts\kontrol.cs" />
-     <Compile Include="Assets\Scripts\player.cs" />
+     <Compile Include="Assets\Scripts\PlayerScript.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/home/atriv7/UnityProjects/Ningsih The Adventure/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
