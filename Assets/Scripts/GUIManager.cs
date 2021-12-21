@@ -20,6 +20,10 @@ public class GUIManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level2");
     }
+    public void Level3()
+    {
+        SceneManager.LoadScene("Level3");
+    }
     public void Credits()
     {
         SceneManager.LoadScene("Credits");

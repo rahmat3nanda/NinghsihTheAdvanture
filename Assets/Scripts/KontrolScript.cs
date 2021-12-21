@@ -16,11 +16,7 @@ public class KontrolScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (gameObject.name == "kiri")
-            player.GetComponent<ObjectMovement>().jalan_kiri();
-        else if (gameObject.name == "kanan")
-            player.GetComponent<ObjectMovement>().jalan_kanan();
-        else if (gameObject.name == "jump") player.GetComponent<ObjectMovement>().melompat();
+         if (gameObject.name == "jump") player.GetComponent<ObjectMovement>().melompat();
     }
 
     private void OnMouseDrag()
@@ -33,21 +29,8 @@ public class KontrolScript : MonoBehaviour
         {
             player.GetComponent<ObjectMovement>().jalan_kanan();
         }
-        else if (gameObject.name == "jump")
-        {
-        }
+        
     }
 
-    private void OnMouseUp()
-    {
-        if (gameObject.name == "kiri")
-        {
-        }
-        else if (gameObject.name == "kanan")
-        {
-        }
-        else if (gameObject.name == "jump")
-        {
-        }
-    }
+   
 }
