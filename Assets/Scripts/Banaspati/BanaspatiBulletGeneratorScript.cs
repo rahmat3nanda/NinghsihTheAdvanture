@@ -15,7 +15,8 @@ namespace Banaspati
 
         private void GenerateBullet()
         {
-            bullet.transform.position = new Vector3(6.94f, banaspati.transform.position.y - 1f, 0f);
+            Vector3 bp = banaspati.transform.position;
+            bullet.transform.position = new Vector3(bp.x -1, bp.y -1f, 0f);
             Instantiate(bullet);
         }
     }
