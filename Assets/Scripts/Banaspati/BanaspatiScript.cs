@@ -18,6 +18,14 @@ namespace Banaspati
             MoveVertical();
         }
 
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.CompareTag("Mawar"))
+            {
+                Destroy(col.gameObject);
+            }
+        }
+
         private void MoveVertical()
         {
             var temp = transform.position;
