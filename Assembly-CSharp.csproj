@@ -61,7 +61,8 @@
      <Compile Include="Assets\Scripts\Model\App\SingletonModel.cs" />
      <Compile Include="Assets\Scripts\Model\PlayerModel.cs" />
      <Compile Include="Assets\Scripts\ObjectMovement.cs" />
-     <Compile Include="Assets\Scripts\PlayerScript.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerBulletScript.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\SplashScript.cs" />
      <Compile Include="Assets\Scripts\Tool\JSONUtils.cs" />
  <Reference Include="Unity.Timeline.Editor">
