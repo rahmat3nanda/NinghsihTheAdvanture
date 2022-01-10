@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Balik
-  - Puter
-  - BanaspatiBullet
-  - Banaspati
-  - Mawar
+  tags: []
   layers:
   - Default
   - TransparentFX
