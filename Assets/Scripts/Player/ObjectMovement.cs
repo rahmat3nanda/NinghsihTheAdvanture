@@ -9,6 +9,10 @@ public class ObjectMovement : MonoBehaviour
     private Vector3 kekanan, kekiri, maju, mundur, keatas, kebawah;
     private int score;
 
+    //SeranganTulup
+    public SerangTulup SerangTulupPrefabs;
+    public Transform Launch;
+    
     private void Start()
     {
         kekanan = new Vector3(1, 0, 0);
@@ -25,21 +29,32 @@ public class ObjectMovement : MonoBehaviour
         if (Input.GetKeyDown("space")) melompat();
 
         if (Input.GetKey(KeyCode.D)) jalan_kanan();
+
+        if (Input.GetKey(KeyCode.S)) prone();
+
+        if (Input.GetKeyDown(KeyCode.F)) 
+            Instantiate(SerangTulupPrefabs, Launch.position, transform.rotation);
     }
 
     public void jalan_kiri()
     {
         transform.position = transform.position + kekiri * speed * Time.deltaTime;
+        transform.rotation = Quaternion.Euler(0f, 180f, 0f);
     }
 
     public void jalan_kanan()
     {
         transform.position = transform.position + kekanan * speed * Time.deltaTime;
+        transform.rotation = Quaternion.Euler(0f, 0f, 0f);
     }
 
     public void melompat()
     {
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         GetComponent<Rigidbody2D>().AddForce(jumpForce);
+    }
+    public void prone()
+    {
+        transform.rotation = Quaternion.Euler(0f, 0f, -90f);
     }
 }
